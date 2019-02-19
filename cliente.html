@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>www.MásReal.es</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="fotos/icono.jpg" type="image/png" />
+    <script type="text/javascript" src="javascript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Barra de búsqueda y zona cliente-->
+    <div class="container-fluid bg-negro inicio">
+        <div class="row">
+            <div class="col-lg-3 col-md-5 col-sm-2 text-center">
+                <a class="navbar-brand" href="home.html">
+                    <h6 class="first text-light fuente1 big-font m-3" href="#">MásReal</h6>
+                </a>
+            </div>
+            <div class="col-lg-5 col-md-8 col-sm-12 barrita text-center">
+                <div class="d-inline-block searcher">
+                    <input type="text" class="form-control " id="usr" />
+                </div>
+                <div class="d-inline-block lupita">
+                    <button class="btn bg-dorado">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="container-fluid">
+                    <div class="icon-bar">
+                        <a href="#"><i class="fa fa-globe"></i>
+                            <p>Idioma</p>
+                        </a>
+                        <a href="cliente.html"><i class="fa fa-heart"></i>
+                            <p>Lista de deseos</p>
+                        </a>
+                        <a href="cliente.html"><i class="fa fa-user-circle"></i>
+                            <p>Mi cuenta</p>
+                        </a>
+                        <a href="carrito.html"><i class="fa fa-shopping-cart"></i>
+                            <p>Carrito</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIAS -->
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse  justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav text-dark">
+                <li class="nav-item">
+                    <a class="nav-link fuente2" href="guitarra.html">Guitarras/Bajo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fuente2" href="percusion.html">Percusión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fuente2" href="teclas.html">Teclas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fuente2" href="vientos.html">Vientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fuente2" href="tradicional.html">Tradicional</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fuente2" href="iluminacion.html">Iluminación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fuente2" href="partituras.html">Partituras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fuente2" href="grabacion.html">Grabación</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <!-- BODY MI CUENTA -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MENU LATERAL -->
+            <div class="col-sm-3">
+                <section class="mx-2 p-3 menu-vertical">
+                    <ul class="navbar-nav text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link fuente2 border-bottom mb-3">Home > Mi cuenta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="71" class="nav-link fuente2 linko" onclick="cliente(this.id);">Mis direcciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="72" class="nav-link fuente2 linko" onclick="cliente(this.id);">Mis pedidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="73" class="nav-link fuente2 linko" onclick="cliente(this.id);">Devolver producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="74" class="nav-link fuente2 linko" onclick="cliente(this.id);">Contactar con MásReal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="75" class="nav-link fuente2 linko" onclick="cliente(this.id);">Lista de deseos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="76" class="nav-link fuente2 linko" onclick="cliente(this.id);">Subir producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuente2" href="#">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- PERFIL -->
+            <div class="col-sm-9">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-9 bg-negro text-light mx-5 my-1 p-3 rounded shadow">
+                            <div class="profile m-5">
+                                <img class="profile" src="fotos/perfil/cris.jpeg">
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 offset-sm-4 pb-5">
+                                        <h4>Cristina Borrego Real</h4>
+                                        <p>cristina@gmail.es <br>
+                                            cod. cliente: 80006666</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MIS DIRECCIONES -->
+                    <div id="81" class="row" hidden>
+                        <div class="col-sm-9 bg-negro text-light mx-5 my-1 p-3 rounded shadow">
+                            <h2>Mis direcciones</h2>
+                            <br>
+                            <div class="container-fluid d-flex justify-content-between">
+                                <div class="row bg-white text-dark rounded offset-sm mx-4 p-3">
+                                    <h3>Mi casa</h3>
+                                    <p>Residencial Arcos <br />
+                                        CP: 11401 <br />
+                                        Jerez de la Frontera
+                                    </p>
+                                </div>
+                                <br />
+                                <div class="row bg-white text-dark rounded offset-sm mx-4 p-3">
+                                    <h3>Mi casa</h3>
+                                    <p>Residencial Arcos <br />
+                                        CP: 11401 <br />
+                                        Jerez de la Frontera
+                                    </p>
+                                </div>
+                                <br />
+                                <div class="row bg-white text-dark rounded offset-sm  mx-4 p-3">
+                                    <h3>Mi casa</h3>
+                                    <p>Residencial Arcos <br />
+                                        CP: 11401 <br />
+                                        Jerez de la Frontera
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MIS PEDIDOS -->
+                    <div id="82" class="row" hidden>
+                        <div class="col-sm-9 bg-negro mx-5 my-1 p-3 rounded shadow">
+                            <h2 class="text-light">Mis pedidos</h2>
+                            <br>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-10 p-4 offset-sm-1 bg-white bd-highlight">
+                                        <div>
+                                            <p><strong>Fecha del pedido 20/10/2017</strong><br>
+                                            Pedido no: 8793183 <br>
+                                            Suma: 1350€</p>
+                                        </div>
+                                        <div class="p-3 mx-4 text-center">
+                                            <img class="border" src="fotos/gelectricas/0.jpg" width="25%" height="auto">
+                                            <img class="border" src="fotos/gelectricas1/0.jpg" width="25%" height="auto">
+                                            <img class="border" src="fotos/bAcustica1/0.png" width="25%" height="auto">
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn bg-dorado">Detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10 p-4 offset-sm-1 bg-white bd-highlight">
+                                        <div>
+                                            <p><strong>Fecha del pedido 20/10/2017</strong><br>
+                                            Pedido no: 8793183 <br>
+                                            Suma: 1350€</p>
+                                        </div>
+                                        <div class="p-3 mx-4 text-center">
+                                            <img class="border" src="fotos/bAcustica/0.png" width="25%" height="auto">
+                                            <img class="border" src="fotos/gelectricas4/0.jpg" width="25%" height="auto">
+                                            <img class="border" src="fotos/gelectricas5/0.jpg" width="25%" height="auto">
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn bg-dorado">Detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-10 p-4 offset-sm-1 bg-white bd-highlight">
+                                        <div>
+                                            <p><strong>Fecha del pedido 20/10/2017</strong><br>
+                                            Pedido no: 8793183 <br>
+                                            Suma: 1350€</p>
+                                        </div>
+                                        <div class="p-3 mx-4 text-center">
+                                            <img class="border" src="fotos/gelectricas6/0.jpg" width="25%" height="auto">
+                                            <img class="border" src="fotos/bAcustica2/0.png" width="25%" height="auto">
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn bg-dorado">Detalles</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- DEVOLVER PRODUCTO -->
+                    <div id="83" class="row" hidden>
+                        <div class="col-sm-9 bg-negro text-light mx-5 my-1 p-3 rounded shadow">
+                            <h2>Devolver un producto</h2>
+                            <br>
+                            <form class="contact-form" action="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                        <br />
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" rows="5" cols="5" placeholder="Escriba aquí el motivo de su devolución"></textarea>
+                                        <br />
+                                        <button type="submit" class="btn bg-dorado">Tramitar devolución</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- CONTACTAR CON MÁSREAL -->
+                    <div id="84" class="row" hidden>
+                        <div class="col-sm-9 bg-negro text-light mx-5 my-1 p-3 rounded shadow">
+                            <h2>Contactar con MásReal</h2>
+                            <br>
+                            <form class="contact-form" action="">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                        <br />
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <br />
+                                        <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" rows="5" cols="5" placeholder="Escriba aquí su mensaje"></textarea>
+                                        <br />
+                                        <button type="submit" class="btn bg-dorado">Enviar mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- LISTA DE DESEOS -->
+                    <div id="85" class="row" >
+                        <div class="col-sm-9 bg-negro text-light mx-5 my-1 p-3 rounded shadow">
+                            <h2>Lista de deseos</h2>
+                            <br>
+                            <div class="container-fluid">
+                                <div class="row bg-white text-dark rounded p-3">
+                                    <div class="col-sm-2 p-0">
+                                        <img src="fotos/gelectricas/0.jpg" class="img-fluid" width="100%" height="auto">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Gibson SG Standar 2018 Herritage Cherry</h4>
+                                        <p>Guitarra eléctrica <br><br>
+                                            <i class="fa fa-check"></i> Modelo SG <br>
+                                            <i class="fa fa-check"></i> Cuerpo de caoba <br>
+                                            <i class="fa fa-check"></i> Mastil encolado</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img class="img-fluid" src="fotos/marca2.png" />
+                                        <h2 class="text-center p-3"><strong>1.350 €</strong></h2>
+                                        <button class="btn bg-dorado mb-3 p-2 px-3"><strong>Añadir a carrito</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <div class="container-fluid">
+                                <div class="row bg-white text-dark rounded p-3">
+                                    <div class="col-sm-2 p-0">
+                                        <img src="fotos/bAcustica2/0.png" class="img-fluid" width="100%" height="auto">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Sonor AQ1 Studio Set Piano White</h4>
+                                        <p>Batería acústica <br><br>
+                                            <i class="fa fa-check"></i> Versión 'Studio' <br>
+                                            <i class="fa fa-check"></i> Cascos 100% de abedul <br>
+                                            <i class="fa fa-check"></i> Herrajes de los cascos de cromo</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img class="img-fluid" src="fotos/marca2.png" />
+                                        <h2 class="text-center p-3"><strong>1.491 €</strong></h2>
+                                        <button class="btn bg-dorado mb-3 p-2 px-3"><strong>Añadir a carrito</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRODUCTOS USADOS-->
+                    <div id="86" class="row" hidden>
+                        <div class="col-sm-9 bg-negro text-light mx-5 my-1 p-3 rounded shadow">
+                            <h2>Productos usados</h2>
+                            <br>
+                            <form action="GET">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect">Categoría:</label>
+                                    <select class="form-control" innerHTML="a" id="exampleFormControlSelect1">
+                                        <option>Guitarras/bajo</option>
+                                        <option>Teclas</option>
+                                        <option>Vientos</option>
+                                        <option>Tradicional</option>
+                                        <option>Percusión</option>
+                                        <option>Iluminación</option>
+                                        <option>Partituras</option>
+                                        <option>Grabación</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect">Subcategoría:</label>
+                                    <select class="form-control" innerHTML="a" id="exampleFormControlSelect1">
+                                        <option>Guitarras/bajo</option>
+                                        <option>Teclas</option>
+                                        <option>Vientos</option>
+                                        <option>Tradicional</option>
+                                        <option>Percusión</option>
+                                        <option>Iluminación</option>
+                                        <option>Partituras</option>
+                                        <option>Grabación</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Modelo:</label>
+                                    <input type="text" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Descripción:</label>
+                                    <textarea class="form-control" rows="6" style="resize: none;" id="comment"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Precio:</label>
+                                    <input type="number" class="form-control" id="precio">
+                                </div>
+                                <input type="file" id="selectedFile" style="display: none;" />
+                                <input class="btn btn-secondary" type="button" value="Subir imagenes del producto" onclick="document.getElementById('selectedFile').click();" />
+                                <br />
+                                <br>
+                                <br />
+                                <button type="submit" class="btn bg-dorado">Solicitar aprobación</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!--Footer-->
+    <footer class="mainfooter bg-negro" role="contentinfo">
+        <div class="footer-top p-y-2 bg-negro">
+            <div class="container-fluid bg-negro">
+            </div>
+        </div>
+        </div>
+        <div class="footer-middle">
+            <div class="container bg-negro">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 bg-negro">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Dirección</h4>
+                            <address>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        Ronda de los Viñedos, Nº 13<br>
+                                        11406<br>
+                                        Jerez de la Frontera<br>
+                                        Teléfono: 666 84 11 23<br>
+                                    </li>
+                                    <li><a href="https://goo.gl/maps/HrBiZobg35M2">Localización</a></li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Servicios</h4>
+                            <ul class="list-unstyled">
+                                <li><a href=""></a></li>
+                                <li><a href="">Centro de pago</a></li>
+                                <li><a href="">Contacto</a></li>
+                                <li><a href="">Formularios</a></li>
+                                <li><a href="">Noticias</a></li>
+                                <li><a href="">Preguntas frecuentes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Información de la Web</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="">Tutorial</a></li>
+                                <li><a href="">Accesibilidad</a></li>
+                                <li><a href="">Cookies</a></li>
+                                <li><a href="">Política de privacidad</a></li>
+                                <li><a href="">Preguntas frecuentes</a></li>
+                                <li><a href="">Web master</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 bg-negro">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Más populares</h4>
+                            <ul class="list-unstyled text-light">
+                                <li><a href="">Guitarras Eléctricas</a></li>
+                                <li><a href="">Bajos acústicos</a></li>
+                                <li><a href="">Teclados electrónicos</a></li>
+                                <li><a href="">Micrófonos pasivos</a></li>
+                                <li><a href="">Baterías acústicas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container fluid">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <!--Footer Bottom-->
+                        <p class="text-xs-center text-light text-center">&copy; Página creada por MásReal</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10 offset-sm-1 text-center">
+                        <div class="icon-bar2">
+                            <a href="https://api.whatsapp.com/send?phone=34668583676"><i class="fa fa-whatsapp"></i>
+                                <p>668 58 36 76</p>
+                            </a>
+                            <a href="https://www.instagram.com/masrealborrego/"><i class="fa fa-instagram"></i>
+                                <p>@masrealborrego</p>
+                            </a>
+                            <a href="https://www.facebook.com/masreal22/"><i class="fa fa-facebook"></i>
+                                <p>MásReal</p>
+                            </a>
+                            <a href="https://dribbble.com/JesusVoltage"><i class="fa fa-dribbble"></i>
+                                <p>Dribble</p>
+                            </a>
+                            <a href="mailto:fotosmasreal@gmail.com"><i class="fa fa-envelope-o"></i>
+                                <p>Email</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---->
+
+
+</body>
+
+</html>

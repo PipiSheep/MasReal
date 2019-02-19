@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>MásReal</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style1.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+<audio id="audio">
+	<source src="mp3.wav" type="audio/ogg">
+	<source src="mp3.wav" type="audio/mpeg">
+</audio>
+
+<!-- <button class="audio" onclick="document.getElementById('audio').play();">asd</button> -->
+
+<div class="">
+	<div style="right: 0px;" class="justified audio btn" onclick="document.getElementById('audio').play();"><i class="fa fa-play"></i></div>
+	<div style="right: 50px;" class="justified audio btn" onclick="document.getElementById('audio').pause();"><i class="fa fa-pause"></i></div>
+	<div style="right: 100px;" class="justified audio btn" onclick="document.getElementById('audio').volume+=O.l"><i class="fa fa-volume-up"></i></div>
+	<div style="right: 150px;" class="justified audio btn" onclick="document.getElementById('audio').volume-=O.l"><i class="fa fa-volume-down"></i></div>
+</div>
+
+
+
+<body class="is-preload">
+	<video>
+	
+	  <source src="VID_20190212_085053.mp4" type="video/mp4">
+	  
+	  </video>
+
+	<div id="wrapper">
+		<div id="bg">
+
+		</div>
+		<div id="overlay">
+
+		</div>
+		<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 class="fuente1 text-light">MásReal</h1>
+				<p class="text-light"><a href="home.html">Home</a> &nbsp;&bull;&nbsp; <a href="lista.html">Segunda mano</a> &nbsp;&bull;&nbsp; <a href="cliente.html">Mi
+						cuenta</a></p>
+				<nav>
+					<ul>
+						<li><a href="https://api.whatsapp.com/send?phone=34668583676" class="icon fa-whatsapp"><span class="label"></span></a></li>
+						<li><a href="https://www.instagram.com/masrealborrego/" class="icon fa-instagram"><span class="label"></span></a></li>
+						<li><a href="https://www.facebook.com/masreal22/" class="icon fa-facebook"><span class="label"></span></a></li>
+						<li><a href="https://dribbble.com/JesusVoltage" class="icon fa-dribbble"><span class="label"></span></a></li>
+						<li><a href="mailto:fotosmasreal@gmail.com" class="icon fa-envelope-o"><span class="label"></span></a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<span class="copyright">&copy; Design: MásReal</span>
+			</footer>
+
+		</div>
+	</div>
+	<script>
+		window.onload = function () { document.body.classList.remove('is-preload'); }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+	</script>
+	<div>
+
+	</div>
+	<audio>
+		<source src="mp3.wav" type="audio/ogg">
+		<source src="prueba.ogg" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<br>
+
+
+
+
+
+</body>
+
+</html>
